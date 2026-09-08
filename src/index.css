@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+:root {
+  --site-max-width: 1360px;
+  --site-padding: clamp(24px, 4vw, 64px);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 14px;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #0A0909;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ───────────────────────────────────────────────────────────── */
+/* GLOBAL SITE-WIDE CONTAINER SYSTEM                             */
+/* ───────────────────────────────────────────────────────────── */
+.site-container {
+  width: 100%;
+  max-width: var(--site-max-width);
+  margin-inline: auto;
+  padding-inline: var(--site-padding);
+}
+
+/* ───────────────────────────────────────────────────────────── */
+/* GLOBAL SITE-WIDE TYPOGRAPHY PRESETS                          */
+/* H1 (Long Hero text): 84px                                    */
+/* H2 (Section Title): 64px                                     */
+/* H3 / Semi-title (subheading): 24px                           */
+/* Content (paragraph): 14px                                    */
+/* Small content (meta/tags): 12px                              */
+/* ───────────────────────────────────────────────────────────── */
+
+.title-long,
+.text-title-84,
+.text-h1 {
+  font-size: clamp(42px, 6vw, 84px) !important;
+  line-height: 1.02 !important;
+}
+
+.title-section,
+.text-title-64,
+.text-h2 {
+  font-size: clamp(32px, 4.5vw, 64px) !important;
+  line-height: 1.05 !important;
+}
+
+.title-semi,
+.text-title-24,
+.text-h3 {
+  font-size: 24px !important;
+  line-height: 1.25 !important;
+}
+
+.text-body-18 {
+  font-size: 18px !important;
+  line-height: 1.5 !important;
+}
+
+.text-body-14 {
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+}
+
+.text-small-12 {
+  font-size: 12px !important;
+  line-height: 1.4 !important;
+}
+
+/* Custom Font Weight & Style Utility Classes */
+.text-bold,
+.font-bold-custom {
+  font-weight: 700 !important;
+}
+
+.text-semibold,
+.font-semibold-custom {
+  font-weight: 600 !important;
+}
+
+.text-normal,
+.font-normal-custom {
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+.text-italic,
+.font-italic-custom {
+  font-style: italic !important;
+}
+
+/* Custom 30px Horizontal Padding Utility Class */
+.px-30,
+.px-30px {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+
+/* Custom 170px Margin Utility Classes */
+.mt-170,
+.mt-170px {
+  margin-top: 170px !important;
+}
+
+.mb-170,
+.mb-170px {
+  margin-bottom: 170px !important;
+}
+
+.my-170,
+.my-170px {
+  margin-top: 170px !important;
+  margin-bottom: 170px !important;
+}
+
+/* Custom 150px Margin & Padding Utility Classes */
+.mt-150,
+.mt-150px {
+  margin-top: 150px !important;
+}
+
+.mb-150,
+.mb-150px {
+  margin-bottom: 150px !important;
+}
+
+.my-150,
+.my-150px {
+  margin-top: 150px !important;
+  margin-bottom: 150px !important;
+}
+
+.py-150,
+.py-150px {
+  padding-top: 150px !important;
+  padding-bottom: 150px !important;
+}
+
+.pt-150,
+.pt-150px {
+  padding-top: 150px !important;
+}
+
+.pb-150,
+.pb-150px {
+  padding-bottom: 150px !important;
+}
+
+/* Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

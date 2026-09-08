@@ -1,0 +1,80 @@
+@import "tailwindcss";
+@import "../index.css";
+
+@theme {
+  --font-sans: 'Titillium Web', sans-serif;
+  --font-titillium: 'Titillium Web', sans-serif;
+  --font-archivo: 'Archivo', sans-serif;
+
+  --color-ink: #0A0909;
+  --color-accent: #FA6400;
+  --color-border: #CCCCCC;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #FFFFFF;
+    color: var(--color-ink);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom Typography & Utility Classes */
+.font-titillium {
+  font-family: var(--font-titillium);
+}
+
+.font-archivo {
+  font-family: var(--font-archivo);
+}
+
+.bg-ink {
+  background-color: var(--color-ink);
+}
+
+.text-ink {
+  color: var(--color-ink);
+}
+
+.bg-accent {
+  background-color: var(--color-accent);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.border-border {
+  border-color: var(--color-border);
+}
+
+/* Signature Eyebrow Underline Motif: 40px wide, 1px height orange rule */
+.eyebrow-underline {
+  display: block;
+  width: 40px;
+  height: 1px;
+  background-color: var(--color-accent);
+  margin-top: 6px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0909;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}
