@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Search, Menu, X, ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Container } from './Container';
 import { NAV_LINKS, PROJECTS_DATA, SERVICES_DATA, NEWS_DATA } from '@/data/mockData';
 import { MegaMenu } from './MegaMenu';
 

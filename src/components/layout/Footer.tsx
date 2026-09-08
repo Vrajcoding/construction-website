@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container } from './Container';
-import { KonstruktionLogoIcon } from './Navbar';
 import { OFFICE_LOCATIONS } from '@/data/mockData';
 
 export const Footer: React.FC = () => {
